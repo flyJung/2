@@ -23,7 +23,7 @@ function handleScroll() {
     const sections = document.querySelectorAll('.scroll-section');
     sections.forEach(section => {
         const sectionTop = section.getBoundingClientRect().top;
-        const triggerPoint = window.innerHeight * 0.8;
+        const triggerPoint = window.innerHeight * 0.85;
 
         if (sectionTop < triggerPoint) {
             section.classList.add('visible');
