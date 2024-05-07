@@ -1,0 +1,125 @@
+/* 스타일 색상 팔레트 */
+:root {
+    --primary-red: #f84747;
+    --light-red: #ffd2d2;
+    --white: #ffffff;
+    --dark-gray: #333333;
+    --light-gray: #f5f5f5;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+}
+
+header {
+    background-color: var(--primary-red);
+    color: var(--white);
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    line-height: 1.2;
+}
+
+#slogan-container {
+    position: relative;
+    height: 2em; /* 슬로건에 맞게 높이를 조정하세요 */
+}
+
+.slogan {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.slogan.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav {
+    background-color: var(--primary-red);
+    color: var(--white);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.scroll-section {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.candidate-photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--primary-red);
+    color: var(--white);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .scroll-section {
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
