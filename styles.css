@@ -128,6 +128,12 @@ footer {
     width: 100%;
 }
 
+td {
+    padding: 10px;           /* 셀 내부에 10px의 패딩을 추가 */
+    vertical-align: top;     /* 셀 내용을 상단에 맞춤 */
+}
+
+
 @media (max-width: 600px) {
     h1 {
         font-size: 2em;
