@@ -112,7 +112,7 @@ main {
 
 .candidate-photo {
     width: 100%;
-    max-width: 150px;
+    max-width: 135px;
     max-height: 400px;
     border-radius: 8px;
     margin: 10px 0;
