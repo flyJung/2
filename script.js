@@ -15,7 +15,7 @@ function showNextSlogan() {
 
 function startSloganAnimation() {
     showNextSlogan();
-    setInterval(showNextSlogan, 3000); // 3초마다 슬로건 전환
+    setInterval(showNextSlogan, 4000); // 3초마다 슬로건 전환
 }
 
 // 스크롤 이벤트로 각 섹션 애니메이션 처리
